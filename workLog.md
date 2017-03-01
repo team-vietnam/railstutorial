@@ -14,3 +14,4 @@
 - 1/28 Night: finish before 4.3.4 https://www.railstutorial.org/book/rails_flavored_ruby#sec-css_revisited
 - 1/29 AM: Finish before chapter 5 https://www.railstutorial.org/book/filling_in_the_layout
 - 1/31 AM: Install Rails locally. Start using RubyMine. Finish at Listing 5.1
+- 3/01 PM: Finish Exercise 5.1.2
