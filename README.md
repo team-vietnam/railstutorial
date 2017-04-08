@@ -17,11 +17,19 @@ All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/)
 is available jointly under the MIT License and the Beerware License. See
 [LICENSE.md](LICENSE.md) for details.
 
-### Mac dev env
+## Mac dev env
 
 Install Homebrew.
 
 Install Ruby/rbenv.
+
+## c9.io (rvm) dev env
+
+```
+rvm install ruby-2.3.3
+rvm use 2.3.3
+gem install bundler
+```
 
 ## Getting started
 
