@@ -56,6 +56,12 @@ If the test suite passes, you'll be ready to run the app in a local server:
 ```
 $ bundle exec rails server
 ```
+
+On c9.io, specify server's IP and PORT as follows.
+```
+bundle exec rails server -b $IP -p $PORT
+```
+
 ## Automated tests with Guard
 
 ```
