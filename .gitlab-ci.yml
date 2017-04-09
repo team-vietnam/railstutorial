@@ -1,4 +1,5 @@
-image: ruby:2.3.3-alpine
+# Need development tools for gems installation
+image: ruby:2.3.3
 
 # test Rails application
 test:
