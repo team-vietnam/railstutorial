@@ -2,10 +2,9 @@
 test:
   script:
   - apt-get update -qy
-  - apt-get install -y nodejs
   - bundle install --path /cache
-  - bundle exec rake db:create RAILS_ENV=test
-  - bundle exec rake test
+  - bundle exec rails db:create RAILS_ENV=test
+  - bundle exec rails test
 
 # automatically deploy staging environment every push to master branch
 staging:
@@ -13,6 +12,9 @@ staging:
   script:
   - gem install dpl
   - dpl --provider=heroku --app=gitlab-ci-ruby-test-staging --api-key=$HEROKU_STAGING_API_KEY
+  environment:
+    name: staging
+    url: https://thawing-plains-90416.herokuapp.com
   only:
   - master
 
