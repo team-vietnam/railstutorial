@@ -1,0 +1,37 @@
+# Need development tools for gems installation
+image: ruby:2.3.3
+
+# test Rails application
+test:
+  script:
+  # - apt-get update -qy
+  # - rvm install ruby-2.3.3
+  # - rvm use 2.3.3
+  - gem install bundler
+  - bundle install --path /cache --without production
+  - bundle exec rails db:create RAILS_ENV=test
+  - bundle exec rails test
+
+# automatically deploy staging environment every push to master branch
+staging:
+  type: deploy
+  script:
+  - gem install dpl
+  - dpl --provider=heroku --app=thawing-plains-90416 --api-key=$HEROKU_STAGING_API_KEY
+  environment:
+    name: staging
+    url: https://thawing-plains-90416.herokuapp.com
+  only:
+  - master
+
+# automatically deploy production environment for every created tag
+production:
+  type: deploy
+  script:
+  - gem install dpl
+  - dpl --provider=heroku --app=ply-pie-fib --api-key=$HEROKU_PRODUCTION_API_KEY
+  environment:
+    name: production
+    url: https://ply-pie-fib.herokuapp.com
+  only:
+  - tags
