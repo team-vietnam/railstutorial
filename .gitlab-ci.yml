@@ -4,7 +4,8 @@ image: ruby:2.3.3
 # test Rails application
 test:
   script:
-  # - apt-get update -qy
+  - apt-get update -qy
+  - apt-get install -y nodejs # bundle needs a JavaScript runtime
   # - rvm install ruby-2.3.3
   # - rvm use 2.3.3
   - gem install bundler
