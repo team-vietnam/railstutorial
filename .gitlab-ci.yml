@@ -1,9 +1,11 @@
+image: ruby:2.3.3-alpine
+
 # test Rails application
 test:
   script:
-  - apt-get update -qy
-  - rvm install ruby-2.3.3
-  - rvm use 2.3.3
+  # - apt-get update -qy
+  # - rvm install ruby-2.3.3
+  # - rvm use 2.3.3
   - gem install bundler
   - bundle install --path /cache --without production
   - bundle exec rails db:create RAILS_ENV=test
