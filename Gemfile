@@ -23,6 +23,8 @@ group :development do
   gem 'spring',                '1.7.2'
   gem 'spring-watcher-listen', '2.0.0'
   gem 'rubocop' #, '~> 0.48.1', require: false
+  gem 'hirb'
+  gem 'hirb-unicode'
 end
 
 group :test do
