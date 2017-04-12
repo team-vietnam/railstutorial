@@ -15,3 +15,4 @@
 - 1/31 AM: Install Rails locally. Start using RubyMine. Finish at Listing 5.1
 - 3/01 PM: Finish Exercise 5.1.2
 - 2017/04/09 0:44: Finish [Exersise 5.1.3 Partials](https://www.railstutorial.org/book/filling_in_the_layout#sec-exercises_partials)
+- 2017/04/12 23:03 Finish just before [6.3 Adding a secure password](https://www.railstutorial.org/book/modeling_users#sec-adding_a_secure_password)
