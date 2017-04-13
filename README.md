@@ -68,5 +68,13 @@ bundle exec rails server -b $IP -p $PORT
 $ bundle exec guard
 ```
 
+## Check Ruby style
+
+```
+$ rubocop-git # for only git changed files
+$ rubocop # for all project files
+```
+
+
 For more information, see the
 [*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
