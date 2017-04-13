@@ -9,4 +9,8 @@ module ApplicationHelper
       page_title + ' | ' + base_title
     end
   end
+
+  def japantime(time)
+    time.in_time_zone('Tokyo')
+  end
 end
