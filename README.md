@@ -5,11 +5,10 @@ This is the sample application for
 Learn Web Development with Rails*](http://www.railstutorial.org/)
 by [Michael Hartl](http://www.michaelhartl.com/).
 
-## Environments
+## Links
 
-- Heroku: https://thawing-plains-90416.herokuapp.com/ | https://git.heroku.com/thawing-plains-90416.git
-- GitLab: https://gitlab.com/vochicong/railstutorial-sample_app
-- c9: https://rails-tutorial-congvc.c9users.io
+- [Demo on Heroku](https://thawing-plains-90416.herokuapp.com)
+- [vochicong/railstutorial-sample-app](https://github.com/vochicong/railstutorial-sample-app)
 
 ## License
 

@@ -1,0 +1,27 @@
+machine:
+  timezone:
+    Asia/Tokyo
+
+  environment:
+    # env vars are defined on CircleCI console
+
+dependencies:
+  pre:
+    - gem install bundler
+  override:
+    # Don't use --path=vendor/bundle because it will be copied to GCP App
+    - bundle check || bundle install --clean --with="test" --without="development production"
+
+database:
+  pre:
+    - cp config/secrets.sample.yml config/secrets.yml
+
+test:
+  override:
+    - bundle exec rails test
+
+deployment:
+  heroku:
+    branch: master
+    heroku:
+      appname: thawing-plains-90416

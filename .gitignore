@@ -25,3 +25,7 @@
 
 # Ignore RubyMine config
 /.idea
+
+# Environment files that may contain sensitive data
+/config/secrets.yml
+
