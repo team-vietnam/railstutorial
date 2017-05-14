@@ -1,4 +1,4 @@
-# Work Log
+# Change Log
 
 - 1/20 AM: Finish before 1.3.1 Bundler
 - 1/20 PM: Finish chapter 1.
