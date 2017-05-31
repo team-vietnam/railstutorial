@@ -78,5 +78,10 @@ $ rubocop # for all project files
 For more information, see the
 [*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
 
+## Deployment with GitLab
+
+Deployment with GitLab is done using gem [travis-ci/dpl](https://github.com/travis-ci/dpl#heroku).
+Configuration: [.gitlab-ci.yml](.gitlab-ci.yml) .
+
 ## Change Log
 See [CHANGELOG.md](CHANGELOG.md)

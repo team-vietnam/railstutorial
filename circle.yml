@@ -12,10 +12,6 @@ dependencies:
     # Don't use --path=vendor/bundle because it will be copied to GCP App
     - bundle check || bundle install --clean --with="test" --without="development production"
 
-database:
-  pre:
-    - cp config/secrets.sample.yml config/secrets.yml
-
 test:
   override:
     - bundle exec rails test
