@@ -11,6 +11,7 @@ test:
   - gem install bundler
   - bundle install --path /cache # --without production
   # - bundle exec rails db:create RAILS_ENV=test
+  - cp config/secrets.sample.yml config/secrets.yml
   - bundle exec rails test
 
 # automatically deploy staging environment every push to master branch
