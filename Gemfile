@@ -28,6 +28,7 @@ group :development do
   gem 'rubocop-git'
   gem 'hirb'
   gem 'hirb-unicode'
+  gem 'annotate'
 end
 
 group :test do
